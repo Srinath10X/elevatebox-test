@@ -1,4 +1,14 @@
+import { TextLoop } from "@/components/motion-primitives/text-loop";
+import { TestimonialCarousel } from "./TestimonialCarousel";
+
 export default function Hero() {
+  const roles = [
+    "Data Analyst",
+    "Data Scientist",
+    "Software Engineer",
+    "Full Stack Developer",
+  ];
+
   return (
     <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
       <div>
@@ -13,23 +23,16 @@ export default function Hero() {
           A Proven Program <br />
           To Make You a{" "}
           <span className="text-orange-500 relative">
-            Data Analyst
+            <TextLoop>
+              {roles.map((role) => (
+                <span>{role}</span>
+              ))}
+            </TextLoop>
             <span className="custom-underline"></span>
           </span>
         </h1>
 
-        <blockquote className="mt-10 text-slate-500">
-          <p className="text-lg italic">
-            “B. Tech Graduate to a Software Engineer”
-          </p>
-          <div className="mt-4 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-slate-300" />
-            <div>
-              <p className="font-medium text-slate-800">Srinath10X</p>
-              <p className="text-sm">Mallareddy deemed to be university</p>
-            </div>
-          </div>
-        </blockquote>
+        <TestimonialCarousel />
       </div>
 
       <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-200">
