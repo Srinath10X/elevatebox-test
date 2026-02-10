@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* NEXTWAVE-CDN styles */
+@import "./_styles/cdn-styles.css";
+
+@custom-variant dark (&: is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
@@ -133,4 +136,490 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.location-footer {
+  background-color: #64748b;
+
+  clip-path: path(
+    "M5 9.26562C5 5.39563 8.13 2.26562 12 2.26562C15.87 2.26562 19 5.39563 19 9.26562C19 13.4356 14.58 19.1856 12.77 21.3756C12.37 21.8556 11.64 21.8556 11.24 21.3756C9.42 19.1856 5 13.4356 5 9.26562ZM9.5 9.26562C9.5 10.6456 10.62 11.7656 12 11.7656C13.38 11.7656 14.5 10.6456 14.5 9.26562C14.5 7.88562 13.38 6.76562 12 6.76562C10.62 6.76562 9.5 7.88562 9.5 9.26562Z"
+  );
+}
+
+.pricing-logos-post-paid {
+  height: 48px;
+  width: 48px;
+}
+
+@media screen and (max-width: 478px) {
+  .pricing-logos-post-paid {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.pricing-logos {
+  height: 24px;
+  width: 24px;
+}
+
+.tooltip-anchor {
+  display: none;
+}
+
+.ribbon-glow {
+  animation: flow 1.5s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    left: 0px;
+    opacity: 0;
+  }
+
+  10% {
+    left: 10px;
+    opacity: 0.5;
+  }
+
+  50% {
+    left: 100px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 236px;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .ribbon-glow {
+    animation: flow 1.5s linear infinite;
+  }
+
+  @keyframes flow {
+    0% {
+      left: 0px;
+      opacity: 0;
+    }
+
+    10% {
+      left: 10px;
+      opacity: 0.5;
+    }
+
+    50% {
+      left: 100px;
+      opacity: 1;
+    }
+
+    100% {
+      left: 246px;
+      opacity: 0;
+    }
+  }
+}
+
+.money-image-styles {
+  height: 109px;
+  width: 114px;
+}
+
+@media screen and (max-width: 478px) {
+  .money-image-styles {
+    height: 72px;
+    width: 79px;
+  }
+}
+
+.ribbon-glow {
+  animation: flow 1.5s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    left: 0px;
+    opacity: 0;
+  }
+
+  10% {
+    left: 10px;
+    opacity: 0.5;
+  }
+
+  50% {
+    left: 100px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 236px;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .ribbon-glow {
+    animation: flow 1.5s linear infinite;
+  }
+
+  @keyframes flow {
+    0% {
+      left: 0px;
+      opacity: 0;
+    }
+
+    10% {
+      left: 10px;
+      opacity: 0.5;
+    }
+
+    50% {
+      left: 100px;
+      opacity: 1;
+    }
+
+    100% {
+      left: 246px;
+      opacity: 0;
+    }
+  }
+}
+
+.money-image-styles {
+  height: 109px;
+  width: 114px;
+}
+
+@media screen and (max-width: 478px) {
+  .money-image-styles {
+    height: 72px;
+    width: 79px;
+  }
+}
+
+.nasscom {
+  width: 180px;
+  height: 40px;
+}
+
+.nsdc-india {
+  width: 180px;
+  height: 40px;
+}
+
+.startup-india {
+  width: 180px;
+  height: 40px;
+}
+
+.ministry-india {
+  width: 100%;
+  height: 40px;
+}
+
+.card1 {
+  background-image: url("https://nxtwave.imgix.net/ccbp-website/nxtwave-intensive-2.0/recognized-by-patterns-card1.png");
+  background-size: cover;
+}
+
+.card2 {
+  background-image: url("https://nxtwave.imgix.net/ccbp-website/nxtwave-intensive-2.0/recognized-by-patterns-card2.png");
+  background-size: cover;
+}
+
+@media screen and (max-width: 478px) {
+  .card1 {
+    background-image: url("https://nxtwave.imgix.net/ccbp-website/nxtwave-intensive-2.0/recognized-by-patterns-card1-mobile.png");
+    background-size: cover;
+  }
+
+  .card2 {
+    background-image: url("https://nxtwave.imgix.net/ccbp-website/nxtwave-intensive-2.0/recognized-by-patterns-card2-mobile.png");
+    background-size: cover;
+  }
+}
+
+.artboard-1,
+.artboard-2 {
+  background-image: url("https://nxtwave.imgix.net/ccbp-website/nxtwave-intensive-2.0/awards-section/awards-section-artboard-bg-desktop.svg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 478px) {
+  .artboard-1,
+  .artboard-2 {
+    background-image: url("https://nxtwave.imgix.net/ccbp-website/nxtwave-intensive-2.0/awards-section/awards-section-artboard-bg-mobile.svg");
+    background-size: cover;
+  }
+}
+
+.new-track-div {
+  background-image: url(https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/nxtwave-intensive-2.0/desktop-new-track-confitee-image.png);
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+@media (min-width: 1200px) and (max-width: 1900px) {
+  .intensive-hero-section {
+    background-image: url(https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/nxtwave-intensive-2.0/hero-section-desktop-bg.png);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .new-track-div {
+    background-image: url(https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/nxtwave-intensive-2.0/coniftte-new-track.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .intensive-description-div {
+    background-image: url(https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/nxtwave-intensive-2.0/hero-section-mobile.png);
+    background-size: cover;
+    background-position: 100% 50%;
+  }
+}
+
+.doubts-clarified-section {
+  background: linear-gradient(181.91deg, #f1f5f9 1.62%, #ffffff 69.6%);
+}
+
+.doubts-clarified-section-bg {
+  background-image: url("https://cdn.prod.website-files.com/6413e0030367922facca6873/641d6e2a39bc9bf7a6ca45b0_doubts-clarified-bg-desktop.svg");
+  background-size: cover;
+}
+
+.underline-light-violet {
+  background-image: url("https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/nxtwave-intensive-2.0/doubts-clarified-doubts-underline.svg");
+  background-size: cover;
+}
+
+.underline-yellow {
+  background-image: url("https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/nxtwave-intensive-2.0/doubts-clarified-book-a-free-demo-underline.svg");
+  background-size: cover;
+}
+
+.dc-td-container {
+  background-image: url("https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/nxtwave-intensive-2.0/doubts-clarified-doubts-bg-desktop.svg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 479px) {
+  .doubts-clarified-section {
+    background: linear-gradient(181.91deg, #f1f5f9 1.62%, #ffffff 69.6%);
+  }
+
+  .doubts-clarified-section-bg {
+    background-image: url("https://cdn.prod.website-files.com/6413e0030367922facca6873/641d6e2a39bc9bf7a6ca45b0_doubts-clarified-bg-desktop.svg");
+    background-size: cover;
+  }
+
+  .dc-td-container {
+    background-image: url("https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/nxtwave-intensive-2.0/doubts-clarified-doubts-bg-desktop.svg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+
+.close-and-tick-marks-icons1 {
+  height: 48px;
+  width: 48px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .close-and-tick-marks-icons1 {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.close-and-tick-marks-icons1 {
+  height: 48px;
+  width: 48px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .close-and-tick-marks-icons1 {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.logo-row-left-div {
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-right 40s linear infinite;
+  /*manipulate the speed of the marquee by changing "40s" line above*/
+}
+
+.logo-row-right-div {
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-left 40s linear infinite;
+  /* manipulate the speed of the marquee by changing "40s" line above*/
+}
+
+/*.left combo className*/
+.logo-row-left-div.left {
+  animation: marquee-left 40s linear infinite;
+}
+
+.logo-row-right-div.right {
+  animation: marquee-right 40s linear infinite;
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.companies-img {
+  height: 52px;
+}
+
+@media screen and (max-width: 478px) {
+  .companies-img {
+    height: 32px;
+    object-fit: cover;
+  }
+}
+
+.marquee1 {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 24px;
+}
+
+.marquee__group1 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 100%;
+  animation: scroll 40s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: -webkit-marquee;
+  -webkit-marquee-direction: backwards;
+  -webkit-marquee-style: alternate;
+  -webkit-marquee-speed: normal;
+  -webkit-marquee-increment: small;
+  -webkit-marquee-repetition: 4;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 24px));
+  }
+}
+
+.companies-img2 {
+  height: 52px;
+}
+
+@media screen and (max-width: 478px) {
+  .companies-img2 {
+    height: 32px;
+    object-fit: cover;
+  }
+}
+
+.marquee2 {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 24px;
+}
+
+.marquee__group2 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 100%;
+  animation: scroll 40s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: -webkit-marquee;
+  -webkit-marquee-direction: backwards;
+  -webkit-marquee-style: alternate;
+  -webkit-marquee-speed: normal;
+  -webkit-marquee-increment: small;
+  -webkit-marquee-repetition: 4;
+}
+
+.companies-img {
+  height: 52px;
+}
+
+@media screen and (max-width: 478px) {
+  .companies-img {
+    height: 32px;
+    object-fit: cover;
+  }
+}
+
+.marquee3 {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 24px;
+}
+
+.marquee__group3 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 100%;
+  animation: scroll 40s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: -webkit-marquee;
+  -webkit-marquee-direction: backwards;
+  -webkit-marquee-style: alternate;
+  -webkit-marquee-speed: normal;
+  -webkit-marquee-increment: small;
+  -webkit-marquee-repetition: 4;
+}
+
+.close-and-tick-marks-icons1 {
+  height: 48px;
+  width: 48px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .close-and-tick-marks-icons1 {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.awards-section-imgs {
+  height: 32px;
+  width: 100px;
 }
